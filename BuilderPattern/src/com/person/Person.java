@@ -1,3 +1,4 @@
+package com.person;
 import java.time.LocalDate;
 
 public class Person {
@@ -16,7 +17,7 @@ public class Person {
         this.email = personBuilder.email;
         this.phone = personBuilder.phone;
         if (firstName == null || lastName == null)
-            throw new IllegalArgumentException("Name and lastName cannot be null");
+            throw new IllegalArgumentException("firstName and lastName cannot be null");
     }
 
     @Override
