@@ -1,4 +1,8 @@
 package com.example;
 
-public class MountainBikeHandlebars {
+public class MountainBikeHandlebars implements Handlebars {
+    @Override
+    public String getType() {
+        return "FLAT";
+    }
 }

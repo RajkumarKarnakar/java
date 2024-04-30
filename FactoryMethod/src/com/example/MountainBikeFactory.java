@@ -1,18 +1,18 @@
 package com.example;
 
-public class RoadBikeFactory implements BikeFactory {
+public class MountainBikeFactory implements BikeFactory {
     @Override
     public Handlebars createHandlebars() {
-        return new RoadBikeHandlebars();
+        return new MountainBikeHandlebars();
     }
 
     @Override
     public Pedals createPedals() {
-        return new RoadBikePedals();
+        return new MountainBikePedals();
     }
 
     @Override
     public Tire createTire() {
-        return new RoadBikeTire();
+        return new MountainBikeTire();
     }
 }

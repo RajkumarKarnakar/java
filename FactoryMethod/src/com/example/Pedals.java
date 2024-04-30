@@ -1,4 +1,5 @@
 package com.example;
 
-public class Pedals {
+public interface Pedals {
+    String getType();
 }

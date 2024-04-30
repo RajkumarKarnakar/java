@@ -1,4 +1,8 @@
 package com.example;
 
-public class MountainBikePedals {
+public class MountainBikePedals implements Pedals {
+    @Override
+    public String getType() {
+        return "SPD";
+    }
 }

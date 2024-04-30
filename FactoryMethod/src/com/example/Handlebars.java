@@ -1,4 +1,5 @@
 package com.example;
 
-public class Handlebars {
+public interface Handlebars {
+    public String getType();
 }

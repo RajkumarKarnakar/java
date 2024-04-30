@@ -1,4 +1,5 @@
 package com.example;
 
-public class Tire {
+public interface Tire {
+    int getWidth();
 }
