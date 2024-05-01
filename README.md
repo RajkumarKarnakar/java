@@ -1,1 +1,1 @@
-this repository contains java object building pattern
+all java patterns
