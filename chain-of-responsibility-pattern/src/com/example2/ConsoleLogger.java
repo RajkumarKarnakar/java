@@ -8,9 +8,9 @@ public class ConsoleLogger extends Logger {
 
     @Override
     public void log(LoggerRequest request) {
-        if(request.level()== LoggerRequest.LogLevel.CONSOLE)
-        System.out.println(request.message());
-        else if (nextLogger !=null)
+        if (request.level() == LoggerRequest.LogLevel.CONSOLE)
+            System.out.println(request.message());
+        else if (nextLogger != null)
             nextLogger.log(request);
 
     }
