@@ -12,6 +12,10 @@ public class App {
 
         light.isOn();
 
+        lightCommandExecutor.execute(new TurnOffLightCommand(light));
+
+        light.isOn();
+
 
     }
 }
