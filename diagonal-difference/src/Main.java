@@ -25,6 +25,6 @@ public class Main {
             leftSum += arr[i][arr.length - 1 - i];
         }
         diff = rightSum - leftSum;
-        return diff;
+        return Math.abs(diff);
     }
 }
