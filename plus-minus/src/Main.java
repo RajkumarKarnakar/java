@@ -1,21 +1,21 @@
 public class Main {
     public static void main(String[] args) {
-        System.out.println("this program will tell fractions one positives, negatives and zeros in the array");
-        int[] numbers = new int[]{-10,5,68,0,12,0,-5,5,84,-45};
-        double positivesFraction = 0;
-        double negativesFraction = 0;
-        double zerosFraction = 0;
+        System.out.println("this program will tell fractions of positives, negatives and zeros in the array");
+        int[] numbers = new int[]{ 5, 68, 12, 0, -5, 5, 84, -45};
+        double positivesCount = 0;
+        double negativesCount = 0;
+        double zerosCount = 0;
         int length = numbers.length;
         for (int number : numbers) {
             if (number > 0)
-                positivesFraction++;
+                positivesCount++;
             if (number < 0)
-                negativesFraction++;
+                negativesCount++;
             if (number == 0)
-                zerosFraction++;
+                zerosCount++;
         }
-        System.out.format("Positives: %.3f\n",(positivesFraction/length));
-        System.out.format("Negatives: %.3f\n",negativesFraction/length);
-        System.out.format("Zeros: %.3f\n",zerosFraction/length);
+        System.out.format("Positives: %.3f\n", (positivesCount / length));
+        System.out.format("Negatives: %.3f\n", negativesCount / length);
+        System.out.format("Zeros: %.3f\n", zerosCount / length);
     }
 }
