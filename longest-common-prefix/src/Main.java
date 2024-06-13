@@ -1,4 +1,3 @@
-import javax.imageio.spi.ServiceRegistry;
 import java.util.Arrays;
 
 public class Main {
@@ -19,10 +18,10 @@ public class Main {
         }
         Arrays.sort(a);
 
-        int end = Math.min(a[0].length(),a[size-1].length());
+        int end = Math.min(a[0].length(), a[size - 1].length());
         int i = 0;
-        while (i<end && a[0].charAt(i)==a[size -1].charAt(i))
+        while (i < end && a[0].charAt(i) == a[size - 1].charAt(i))
             i++;
-        return a[0].substring(0,i);
+        return a[0].substring(0, i);
     }
 }
